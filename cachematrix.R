@@ -1,4 +1,4 @@
-## Matrix inversion is usually a costly computation and there may be some benefit to caching
+## Matrix inversion is usually a costly computation and there may be some benefits to caching
 ## the inverse of a matrix rather than computing it repeatedly.
 ## The functions below cache the inverse of a matrix.
 
@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
    invm <- x$getInverse()
    
    if(!is.null(invm)) {
-      message("getting cached inverse matrix data")
+      message("Getting cached inverse matrix data.")
       return(invm)
    }
    data <- x$get()
